@@ -15,7 +15,7 @@
             
             <div class="mb-3">
                 <label for="nama_depan" class="form-label">Nama depan</label>
-                <input class="form-control @error("nama_depan") is-invalid @enderror" value="{{ old("nama_depan")?? "" }}" name="nama_depan" type="nama_depan" id="nama_depan">
+                <input class="form-control @error("nama_depan") is-invalid @enderror" value="{{ old("nama_depan")?? "" }}" name="nama_depan" type="nama_depan" id="nama_depan" required>
                 @error("nama_depan")
                 <div class="invalid-feedback">
                 {{ $message }}
@@ -37,7 +37,7 @@
         </div>    
         <div class="mb-3">
             <label for="email" class="form-label">Alamat email</label>
-            <input class="form-control @error("email") is-invalid @enderror" value="{{ old("email")?? "" }}"name="email" type="email" id="email">
+            <input class="form-control @error("email") is-invalid @enderror" value="{{ old("email")?? "" }}"name="email" type="email" id="email" required>
             @error("email")
             <div class="invalid-feedback">
             {{ $message }}
@@ -46,7 +46,7 @@
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input class="form-control @error("password") is-invalid @enderror" name="password" type="password" id="password">
+            <input class="form-control @error("password") is-invalid @enderror" name="password" type="password" id="password" required>
             @error("password")
             <div class="invalid-feedback">
             {{ $message }}
@@ -55,7 +55,7 @@
         </div>
         <div class="mb-3">
             <label for="password_confirmation" class="form-label">Konfirmasi password</label>
-            <input class="form-control @error("password_confirmation") is-invalid @enderror" name="password_confirmation" type="password" id="password_confirmation">
+            <input class="form-control @error("password_confirmation") is-invalid @enderror" name="password_confirmation" type="password" id="password_confirmation" required>
             @error("password_confirmation")
             <div class="invalid-feedback">
             {{ $message }}
