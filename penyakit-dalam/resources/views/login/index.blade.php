@@ -1,13 +1,13 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="container-fluid mt-3">
+<div style="height: 100%" class="d-flex flex-column justify-content-center">
 <div class="row justify-content-center">
     <div class="col col-12">
         <h1 class="text-center mb-3">Login</h1>
         <p class="text-center mb-3">Masukkan email dan password Anda!</p>
     </div>
-    <div class="col col-10 col-md-5 col-lg-4">
+    <div class="col col-10 col-md-5 col-lg-3">
         @if (session()->has("error"))
         <div class="alert alert-danger" role="alert">
         {{ session("error") }}
@@ -45,6 +45,7 @@
     </div>
 
     </div>
+</div>
 </div>
 </div>
 

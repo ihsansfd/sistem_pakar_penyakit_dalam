@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
     <footer>
-        <div class="container-fluid bg-primary p-2 text-white shadow shadow-sm">
+        <div class="container-fluid bg-primary p-2 text-white">
             <div class="text-center"><small>&copy; Copyright. Dibuat oleh kelompok Gunung Merapi.</small>
             </div>
         </div>
